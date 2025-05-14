@@ -1,0 +1,66 @@
+/* ColorChanger.css */
+
+.color-changer-container {
+  height: calc(100vh - 70px); /* Adjust height to accommodate the navbar */
+  margin-top: 70px; /* Ensure space from the fixed navbar if used */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.color-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.color-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-btn.red {
+  background-color: red;
+}
+
+.color-btn.green {
+  background-color: green;
+}
+
+.color-btn.purple {
+  background-color: purple;
+}
+
+.color-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .color-title {
+    font-size: 2rem;
+  }
+  
+  .color-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
