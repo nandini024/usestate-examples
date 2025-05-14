@@ -37,7 +37,7 @@ const Theme = () => {
           marginTop: "10px"
         }}
       >
-        {theme ? <FaMoon /> : <CiBrightnessUp />}
+        {theme ? <CiBrightnessUp />:<FaMoon /> }
       </button>
     </div>
   );

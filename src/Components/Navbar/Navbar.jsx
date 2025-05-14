@@ -5,11 +5,20 @@ import './Navbar.css'; // ✅ Import CSS file
 function Navbar() {
   return (
     <div className="navbar">
-   
-
-      <Link to='/' className="navbar-link">
-        <h3>🏠 Home</h3>
-      </Link>
+      <div className="link-wrapper">
+        <Link to="counterapp" className="navbar-link">
+          🧮 CounterApp
+        </Link>
+        <Link to="colorchanger" className="navbar-link">
+          🎨 Colour Changer
+        </Link>
+        <Link to="randomcolor" className="navbar-link">
+          🌈 Random Color
+        </Link>
+        <Link to="theme" className="navbar-link">
+          🌓 Theme Changer
+        </Link>
+      </div>
     </div>
   );
 }
