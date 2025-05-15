@@ -1,66 +1,72 @@
-/* ColorChanger.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
 
 .color-changer-container {
-  height: calc(100vh - 70px); /* Adjust height to accommodate the navbar */
-  margin-top: 70px; /* Ensure space from the fixed navbar if used */
+  height: 80vh;
+  width: 100vw;
+  transition: background-color 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  transition: background-color 0.4s ease;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
   text-align: center;
+  padding: 40px;
 }
 
 .color-title {
-  font-size: 2.5rem;
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
   color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
   margin-bottom: 40px;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
 }
 
 .button-group {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .color-btn {
   padding: 15px 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  border-radius: 30px;
   color: white;
-  transition: 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.color-btn.red {
-  background-color: red;
-}
-
-.color-btn.green {
-  background-color: green;
-}
-
-.color-btn.purple {
-  background-color: purple;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .color-btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .color-title {
-    font-size: 2rem;
-  }
-  
-  .color-btn {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
+/* Individual button colors */
+.red {
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+}
+
+.green {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.purple {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
 }

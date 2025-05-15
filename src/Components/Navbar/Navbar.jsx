@@ -1,25 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // ✅ Import CSS file
+import './Navbar.css';
 
 function Navbar() {
   return (
-    <div className="navbar">
-      <div className="link-wrapper">
-        <Link to="counterapp" className="navbar-link">
-          🧮 CounterApp
-        </Link>
-        <Link to="colorchanger" className="navbar-link">
-          🎨 Colour Changer
-        </Link>
-        <Link to="randomcolor" className="navbar-link">
-          🌈 Random Color
-        </Link>
-        <Link to="theme" className="navbar-link">
-          🌓 Theme Changer
-        </Link>
-      </div>
-    </div>
+    <nav className="navbar">
+      <div className="logo">💻 10kCoders</div>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+      </ul>
+    </nav>
   );
 }
 

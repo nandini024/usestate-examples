@@ -1,30 +1,31 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import './Home.css'; // ✅ Importing the CSS
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Home.css';
 
-// const Home = () => {
-//   return (
-   
-     
-//       <div className="link-wrapper">
-//         <Link to="counterapp" className="home-link">
-//           <span>🧮 CounterApp</span>
-//         </Link>
+const Home = () => {
+  return (
+    <div className="home-container">
+      <h1 className="home-title">🚀 Explore Mini Projects</h1>
+      <div className="card-grid">
+        <Link to="counterapp" className="card">
+          <div className="emoji">🧮</div>
+          <h2>Counter App</h2>
+        </Link>
+        <Link to="colorchanger" className="card">
+          <div className="emoji">🎨</div>
+          <h2>Color Changer</h2>
+        </Link>
+        <Link to="randomcolor" className="card">
+          <div className="emoji">🌈</div>
+          <h2>Random Color</h2>
+        </Link>
+        <Link to="theme" className="card">
+          <div className="emoji">🌓</div>
+          <h2>Theme Changer</h2>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-//         <Link to="colorchanger" className="home-link">
-//           <span>🎨 Colour Changer</span>
-//         </Link>
-
-//         <Link to="randomcolor" className="home-link">
-//           <span>🌈 Random Color</span>
-//         </Link>
-
-//         <Link to="theme" className="home-link">
-//           <span>🌓 Theme Changer</span>
-//         </Link>
-//       </div>
-   
-//   );
-// };
-
-// export default Home;
+export default Home;

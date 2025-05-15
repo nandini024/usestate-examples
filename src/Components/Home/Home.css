@@ -1,45 +1,55 @@
-/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #ffffff);
+}
 
 .home-container {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
-  background-color: #f5f7fa;
-  min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 32px;
   color: #333;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-.link-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.home-link {
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: #333;
-  font-size: 1.2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.home-link:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  color: #0066ff;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.home-link span {
-  display: block;
-  font-weight: 500;
+.card .emoji {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 20px;
 }
