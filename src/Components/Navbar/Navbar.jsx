@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">💻 10kCoders</div>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/">View All Tasks</Link></li>
       </ul>
     </nav>
   );
